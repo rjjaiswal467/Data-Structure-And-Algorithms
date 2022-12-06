@@ -47,10 +47,11 @@ class Solution_Eq {
             return 1;
         }
         for (int i = 0; i < n; i++) {
-            total_sum = arr[i]+total_sum;
+            total_sum = arr[i]+total_sum; // find total sum of the array
         }
 
-        for (int i = 0; i < n-1; i++) {
+
+        for (int i = 0; i < n-1; i++) { // {1,7,5,4,4} o/p=3
             tmp=arr[i]+tmp;
             tmp1=(float)(total_sum-arr[i+1])/2;
             if (tmp1==tmp){

@@ -1,9 +1,35 @@
 package practice;
 
-public class Test1 {
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.function.Predicate;
 
-    public static void main(String[] args) {
+class Test1 {
+    String xyz;
+    static HashMap<String, String> map = new HashMap<>();
 
+
+//    public Map<String, String> getMap(){
+//        for (Map.Entry<String, String> entry : map.entrySet()){
+//            map.put(entry.getKey(), entry.getValue());
+////            System.out.println(map.get("A"));
+//        }
+//        return map;
+//    }
+
+    public String getMap(){
+        for (Map.Entry<String, String> entry : map.entrySet()){
+            xyz= entry.getValue();
+        }
+        return xyz;
+    }
+    public static void main(String args[]) {
+        map.put("A","B");
+        Test1 test1 = new Test1();
+//        test1.getMap();
+        System.out.println(test1.getMap());
+//        System.out.println(test1.getMap().get("A"));
 
     }
 }

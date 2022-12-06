@@ -74,15 +74,15 @@ class First_Repeating_Element{
     public static int firstRepeated_Method2(int []arr, int n)
     {
         Set<Integer> set = new HashSet<>();
-        int r = -2;
+        int r = 0;
         for( int i = n-1; i>=0 ;i--){
             if(set.contains(arr[i])){
-                r = i;
+                r = arr[i];
 
             }else{
                 set.add(arr[i]);
             }
         }
-        return r+1;
+        return r;
     }
 }

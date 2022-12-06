@@ -17,7 +17,7 @@ public class Recursion {
 	
 	public static void main(String[] args) {
 		
-		int no=20;
+		int no=5;
 		System.out.println(fact1(no));
 		System.out.println(fact2(no));
 	}
