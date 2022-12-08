@@ -49,18 +49,18 @@ class Solution_Matrics_Multiplication
     //Function to multiply two matrices.
     static int[][] multiplyMatrix(int A[][], int B[][])
     {
-        int n1 = A.length;
-        int m1 = A[0].length;
-        int n2 = B.length;
-        int m2 = B[0].length;
-        int[][] Result = new int[n1][m2];
+        int AR = A.length;
+        int AC = A[0].length;
+        int BR = B.length;
+        int BC = B[0].length;
+        int[][] Result = new int[AR][BC];
         int[][] emptyMatrix = new int[0][0];
-        if (m1!=n2){
+        if (AC!=BR){
             return emptyMatrix;
         }
-        for (int i = 0; i < n1; i++) {
-            for (int j = 0; j < m2; j++) {
-                for (int k = 0; k <m1 ; k++) {
+        for (int i = 0; i < AR; i++) {
+            for (int j = 0; j < BC; j++) {
+                for (int k = 0; k <AC ; k++) {
                     Result[i][j]+=A[i][k]*B[k][j];
                 }
             }
