@@ -2,7 +2,7 @@ package ds;
 
 public class Prime_Number {
 
-    static void print_primes_till_N(int N)
+    public static void print_primes_till_N(int N)
     {
         // Declare the variables
         int i, j, flag;
@@ -34,7 +34,7 @@ public class Prime_Number {
 
     public static void main(String[] args) {
 
-        int N = 100;
+        int N = 1000;
 
         print_primes_till_N(N);
     }

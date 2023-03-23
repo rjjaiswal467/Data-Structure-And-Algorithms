@@ -1,5 +1,9 @@
 package workshop6.tree;
 
+
+//PreOrder -> Root   Left   Right -->1st time visit
+//InOrder  -> Left   Root   Right -->2nd time visit
+//PostOrder-> Left   Right  Root  -->3rd time visit
 public class Traversal_Of_Tree {
 
     Node root;
@@ -7,6 +11,7 @@ public class Traversal_Of_Tree {
         root=null;
     }
 
+    //PostOrder-> Left   Right  Root  -->3rd time visit
     public void printPostOrder(Node node){
         if (node==null)
             return;
@@ -15,6 +20,7 @@ public class Traversal_Of_Tree {
         System.out.print(node.key+ " ");
     }
 
+    //InOrder  -> Left   Root   Right -->2nd time visit
     public void printInOrder(Node node){
         if (node==null)
         return;
@@ -23,6 +29,7 @@ public class Traversal_Of_Tree {
         printInOrder(node.right);
     }
 
+    //PreOrder -> Root   Left   Right -->1st time visit
     public void printPreOrder(Node node){
         if(node==null)
             return;
@@ -30,19 +37,6 @@ public class Traversal_Of_Tree {
         printPreOrder(node.left);
         printPreOrder(node.right);
     }
-
-    void printPostOrder(){
-        printPostOrder(root);
-    }
-
-    void printInOrder(){
-        printInOrder(root);
-    }
-
-    void printPreOrder(){
-        printPreOrder(root);
-    }
-
     public static void main(String[] args) {
 
         Traversal_Of_Tree bt = new Traversal_Of_Tree();
@@ -53,17 +47,17 @@ public class Traversal_Of_Tree {
         bt.root.left.right = new Node(5);
 
         System.out.print("PreOrder - ");
-        bt.printPreOrder();
+//        bt.printPreOrder();
+        bt.printPreOrder(bt.root);
 
         System.out.println();
 
         System.out.print("InOrder - ");
-        bt.printInOrder();
+        bt.printInOrder(bt.root);
         System.out.println();
 
         System.out.print("PostOrder - ");
-        bt.printPostOrder();
+        bt.printPostOrder(bt.root);
         System.out.println();
     }
-
 }

@@ -13,7 +13,7 @@ public class Find_Leaf_Nodes {
             return;
         count_Leaf(node.left);
         count_Leaf(node.right);
-        if(node.right==null && node.right==null) {
+        if(node.right==null && node.left==null) {
             System.out.println(node.key);
         }
     }
@@ -30,5 +30,6 @@ public class Find_Leaf_Nodes {
         tree.root.right.left = new Node(10);
 
         tree.count_Leaf(tree.root);
+
     }
 }

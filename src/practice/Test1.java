@@ -19,8 +19,11 @@ class Test1 {
 //    }
 
     public String getMap(){
-        for (Map.Entry<String, String> entry : map.entrySet()){
-            xyz= entry.getValue();
+//        for (Map.Entry<String, String> entry : map.entrySet()){
+//
+//        }
+        for(Map.Entry<String, String> map1:map.entrySet()){
+            xyz= map1.getValue();
         }
         return xyz;
     }

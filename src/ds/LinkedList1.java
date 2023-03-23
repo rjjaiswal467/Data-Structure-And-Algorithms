@@ -16,6 +16,7 @@ public class LinkedList1 {
 		Ll.add("Apex");
 		Ll.add("Legend");
 		Ll.add("fastest");
+		System.out.println();
 
 		System.out.println("1st");
 

@@ -10,7 +10,7 @@ class Parents{
 
 class Child extends Parents{
 
-    void show(){
+    void show() {
         System.out.println("In Child2");
     }
 }

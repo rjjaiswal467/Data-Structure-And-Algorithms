@@ -6,9 +6,9 @@ public class Split_Example {
 
     static void reverse_Word(String A){
 
-        String split[] = A.split(" ");
+        String splitArray[] = A.split(" ");
         Stack<String> stack = new Stack<>();
-        for (String str: split){
+        for (String str: splitArray){
             stack.push(str);
         }
 

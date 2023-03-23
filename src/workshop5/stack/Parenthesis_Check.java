@@ -1,8 +1,7 @@
 package workshop5.stack;
 
 
-import Interview.Question1;
-import practice.Test11_copy;
+import practice1.Question1;
 
 import java.util.*;
 import java.lang.*;

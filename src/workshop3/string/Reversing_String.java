@@ -18,7 +18,7 @@ public class Reversing_String {
         return sb.toString();
     }
     public static void main(String[] args) {
-        String str = "whatever";
+        String str = "Deepak";
         System.out.println(reverse_String(str));
 
     }

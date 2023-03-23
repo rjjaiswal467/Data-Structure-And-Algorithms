@@ -30,6 +30,10 @@ public class Person {
         this.age = age;
     }
 
+    public Person(String fname) {
+        this.fname = fname;
+    }
+
     @Override
     public String toString() {
         return fname  + age;

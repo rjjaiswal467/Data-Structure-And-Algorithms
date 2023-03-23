@@ -8,18 +8,15 @@ public class Print_Count_Of_Leaf {
         root = null;
     }
     int count=0;
-    public int count_Leaf(Node node){
-        inorder(node);
-        return count;
-    }
-    public void inorder(Node node){
+    public int inorder(Node node){
         if (node == null)
-            return;
+            return 0;
         inorder(node.left);
         inorder(node.right);
         if(node.right==null && node.left==null){
             count++;
         }
+        return count;
     }
 
 
@@ -33,6 +30,7 @@ public class Print_Count_Of_Leaf {
         tree.root.right.right = new Node(9);
 //        tree.root.right.left = new Node(10);
 
-        System.out.println(tree.count_Leaf(tree.root));
+//        System.out.println(tree.count_Leaf(tree.root));
+        System.out.println(tree.inorder(tree.root));
     }
 }
